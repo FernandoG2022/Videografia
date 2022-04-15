@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Estilos/VideoEstilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Fuente de Google -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>Videos</title>
+</head>
+
+<body>
+    <header>
+        <div class="containerHeader">
+            <itemHeader class="itemHeader1">
+                <nav>
+                    <div class="containerNav">
+                        <div class="itemnav item1"><a class="nav" href="Index.html">Home</a></div>
+                        <div class="itemnav item2"><a class="nav" href="VideoEstudios.html">Estudios</a></div>
+                        <div class="itemnav item3"><a class="nav" href="VideoActores.html">Actores</a></div>
+                        <div class="itemnav item4"><a class="nav" style="background-color: blue;" href="VideoAsociados.html">Asociados</a></div>
+                        <div class="itemnav item5"><a class="nav" href="VideoContacto.html">Contacto</a></div>
+                        <div class="itemnav item6"><a class="nav" href="VideoSucursales.html">Sucursales</a></div>
+                    </div>                
+                </nav>
+            </itemHeader>
+            <itemHeader class="itemHeader2">
+                <h1  class="animate__animated animate__backInDown">Videografía 2022</h1>
+            </itemHeader>
+        </div>        
+    </header>
+
+<h2 class="animate__animated animate__pulse">Formulario de Socios</h2>
+    <form action="show_data.html" target="_blank">
+            <fieldset>
+                <legend>Nombre y Apellido</legend>
+                <div class="containerAsociados">
+                    <div class="itemAsoc itemAsoc01"><label for="Nombre">Nombre: </label></div>
+                    <div class="itemAsoc itemAsoc02"><input type="text" name="Nombre" id="Nombre" placeholder="Ingrese aqui su nombre"></div>
+                    <div class="itemAsoc itemAsoc03"><label for="Apellido">Apellido: </label></div>
+                    <div class="itemAsoc itemAsoc04"><input type="text" name="Apellido" id="Apellido" placeholder="Ingrese aqui su apellido"></div>
+                </div>
+
+                <!-- <label for="Nombre">Nombre: </label><input type="text" name="Nombre" id="Nombre" placeholder="Ingrese aqui su nombre">
+                <label for="Apellido">Apellido: </label><input type="text" name="Apellido" id="Apellido" placeholder="Ingrese aqui su apellido"><br> -->
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Domicilio</legend>
+
+                <div class="containerAsociados">
+                    <div class="itemAsoc itemAsoc05"><label for="Calle">Calle: </label></div>
+                    <div class="itemAsoc itemAsoc06"><input type="text" name="Calle" id="Calle" placeholder="Ingrese aqui su dirección"></div>
+                    <div class="itemAsoc itemAsoc07"><label for="Nro">Nro: </label></div>
+                    <div class="itemAsoc itemAsoc08"><input type="number" name="Nro" id="Nro" placeholder="Ingrese aqui su numeración"></div>
+                </div>
+                <div class="containerAsociados">
+                    <div class="itemAsoc itemAsoc09"><label for="Piso">Piso: </label></div>
+                    <div class="itemAsoc itemAsoc10"><input type="number" name="Piso" id="Piso" placeholder="Ingrese aqui el Piso"></div>
+                    <div class="itemAsoc itemAsoc11"><label for="Dpto">Dpto: </label></div>
+                    <div class="itemAsoc itemAsoc12"><input type="text" name="Dpto" id="Dpto" placeholder="Ingrese aqui el Dpto"></div>
+                    <div class="itemAsoc itemAsoc13"><label for="CP">CP: </label></div>
+                    <div class="itemAsoc itemAsoc14"><input type="number" name="CP" id="CP" placeholder="Ingrese aqui su código postal"></div>
+                </div>
+                <!-- <label for="Calle">Calle: </label><input type="text" name="Calle" id="Calle" placeholder="Ingrese aqui su dirección">
+                <label for="Nro">Nro: </label><input type="number" name="Nro" id="Nro" placeholder="Ingrese aqui su numeración"><br><br>
+                <label for="Piso">Piso: </label><input type="number" name="Piso" id="Piso" placeholder="Ingrese aqui el Piso">
+                <label for="Dpto">Dpto: </label><input type="text" name="Dpto" id="Dpto" placeholder="Ingrese aqui el Dpto"><br><br>
+                <label for="CP">CP: </label><input type="number" name="CP" id="CP" placeholder="Ingrese aqui su código postal"><br> -->
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Fecha de Nacimiento</legend>
+                <div class="containerAsociados"></div>
+                    <div class="itemAsoc itemAsoc15"><input type="date" name="Nacimiento" min="1930-01-01" max="2040-12-31" id="" placeholder="Ingrese aqui su fecha de nacimiento"></div>
+                </div>
+                <!-- <label for="Nacimiento">Fecha: </label><input type="date" name="Nacimiento" min="1930-01-01" max="2040-12-31" id="" placeholder="Ingrese aqui su fecha de nacimiento"><br> -->       
+            </fieldset>
+        <p>
+            <fieldset>
+                <legend>Género</legend>
+                    <div class="containerAsociados">
+                        <div class="itemAsoc itemAsoc16"><input type="radio" name="Genero" value="Hombre">Hombre</div>
+                        <div class="itemAsoc itemAsoc17"><input type="radio" name="Genero" value="Mujer">Mujer</div>
+                        <div class="itemAsoc itemAsoc18"><input type="radio" name="Genero" value="Otro">Otro</div>
+                    </div>
+                <!-- <input type="radio" name="Genero" value="Hombre">Hombre -->
+                <!-- <input type="radio" name="Genero" value="Hombre" checked>Hombre -->
+                <!-- <input type="radio" name="Genero" value="Mujer">Mujer -->
+                <!-- <input type="radio" name="Genero" value="Otro">Otro -->
+            </fieldset>
+            </p>
+            <p>
+            <fieldset>
+                <legend>Estudios</legend>
+                <div class="containerAsociados">
+                    <div class="itemAsoc itemAsoc19"><input type="checkbox" name="Estudios" value="Primarios">Primarios</div>
+                    <div class="itemAsoc itemAsoc20"><input type="checkbox" name="Estudios" value="Secundarios">Secundarios</div>
+                    <div class="itemAsoc itemAsoc21"><input type="checkbox" name="Estudios" value="Terciarios">Terciarios</div>
+                    <div class="itemAsoc itemAsoc22"><input type="checkbox" name="Estudios" value="Universitarios">Universitarios</div>
+                    <div class="itemAsoc itemAsoc23"><input type="checkbox" name="Estudios" value="Otros">Otros</div>
+                </div>
+                <!-- <input type="checkbox" name="Estudios" value="Primarios">Primarios
+                <input type="checkbox" name="Estudios" value="Secundarios">Secundarios
+                <input type="checkbox" name="Estudios" value="Terciarios">Terciarios
+                <input type="checkbox" name="Estudios" value="Universitarios">Universitarios
+                <input type="checkbox" name="Estudios" value="Otros">Otros -->
+            </fieldset>
+            </p>
+            <fieldset>
+                <legend>Ocupación</legend>
+                <label for="Ocupacion">Turno: </label>
+                    <select name="Ocupacion" id="Ocupacion">
+                        <option value=""></option>
+                        <option value="Profesional">Profesional</option>
+                        <option value="Tecnico">Tecnico</option>
+                        <option value="Estudiante">Estudiante</option>
+                        <option value="Docente">Docente</option>
+                        <option value="Desocupado">Desocupado</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </fieldset>
+            <br>
+            <input type="reset" value="Borrar">
+            <input type="submit" value="Enviar"<br><br>
+    </form>
+    <br>
+
+    <footer>
+        <a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook-circle bx-tada bx-sm' style='color:#2600ff'></i></a>
+        <a href="https://www.instagram.com/?hl=es-la" target="_blank"><i class='bx bxl-instagram-alt bx-tada  bx-sm' style='color: rgb(250, 9, 178)'></i></a>
+        <a href="https://twitter.com" target="_blank"><i class='bx bxl-twitter bx-tada bx-sm' style='color:#00b5ff' ></i></a>
+        <a href="mailto:contacto@gmai.com"><i><i class='bx bxl-gmail bx-tada bx-sm' style='color:#ff0000'></i></i></a>
+        <h5>Fernando 2022 <i class='bx bx-copyright'></i> </h5>
+    </footer>
+
+</body>
+
+</html>

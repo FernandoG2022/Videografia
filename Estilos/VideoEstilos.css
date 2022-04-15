@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+h1,h2{
+    font-family: 'Roboto Slab', serif;      /*Fuente de Fonts.Google*/
+    text-align: center;
+}
+
+h1{
+    font-size: 3em;
+}
+
+h2{
+    background-color: MidnightBlue;       /*Color de fondo de los botones de navegación*/
+    color: white;                          /*Color del texto de h2*/
+    padding: 2px;                            /*Crear un mayor borde en los h2*/
+    font-size: 2em;
+}
+
+h4{
+    color: darkblue;
+    font-size: 1em;
+}
+
+h4 :hover{
+    color: cyan;
+    background-color: darkslateblue;
+}
+
+a:link, a:visited, a:active {
+    text-decoration:none;                   /*Para que los links no aparezcan subrayados*/
+}
+
+header{
+    background-color: black;
+    color: white;
+    height: 80px;
+}
+
+.nav{
+    font-family: 'Roboto Slab', serif;      /*Fuente de Fonts.Google*/
+    font-size: 1em;
+    background-color: gray;       /*Color de fondo de los botones de navegación*/
+    color: white;                 /*Color del texto de los botones de navegación*/
+    text-decoration: none;          /*Quita el subrayado de los links*/
+    padding: 3px;                   /*Crear un mayor borde en los botones de navegación*/
+    border-radius: 5px;             /*Redondea las esquinas de los botones*/
+    margin: 1px;                    /*Es la separación entre los botones de navegación*/
+}
+
+.containerNav{
+    display: flex;
+}
+
+body{
+    background-image: linear-gradient(to top, #64d3f8 0%, #98aae7 100%); /* Color de Fondo de https://webgradients.com/ */
+    text-align: justify;
+}
+
+/* table{
+    align-content: center; 
+    text-align: left;
+    width: 400px;
+} */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    clear: both;
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
+}
+
+input[type=submit]{
+    cursor: pointer;
+}
+
+input[type=reset]{
+    cursor: pointer;
+}
+
+input[type=submit]:hover{
+    background-color: black;
+    color: white;
+}
+
+input[type=reset]:hover{
+    background-color: black;
+    color: white;
+}
+
+/* section{
+    text-align: center;
+    width: 25%;
+    padding: 0;
+    float: left;
+} */
+
+.container1{                              /*Flexbox Contenedor para VideoContacto.html*/
+    /* border: 5px solid blue; */
+    display: inline-flex;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+    align-content: flex-end;
+}
+
+.itemActores{                                  /*Flexbox Items del Contenedor en VideoContacto.html*/
+    width: 33.3333%;
+}
+
+.containerActores{
+    text-align: center;
+    flex-direction: row;
+    display: flex;
+}
+
+.itemSucursales{                                  /*Flexbox Items del Contenedor en VideoContacto.html*/
+    width: 25%;
+}
+
+.containerSucursales{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    display: flex;
+    width: 100%;
+    /* column-gap: 20mm; */
+}
+
+/* .itemSucursales.item-9,.itemSucursales.item-10,.itemSucursales.item-11,.itemSucursales.item-12{
+    width: 100%;
+} */
+
+.span{
+    width: 200px;
+}
+
+.Actor1, .Actor2, .Actor3{  /*Para centrar titulos de Grid Actores*/
+    text-align: center;
+}
+
+.containerGridActores{
+    background-color: yellowgreen;
+    border: 4px solid blue;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: left;
+}
+
+.itemGridActor{
+    background-color: #bdbdb9;
+    border: 1px solid #004edf;
+    align-items: right;
+}
+
+.containerFlexEstudios{
+    text-align: center;
+    /* display: grid; */
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-direction: row;
+    display: flex;
+}
+
+.itemFlexEstudios{
+    width: 100%;
+    align-items: center;
+}
+
+.containerGridEstudios{
+    background-color: blue;
+    border: 3px solid darkblue;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+}
+
+.itemGridEstudios{
+    background-color: #bdbdb9;
+    border: 1px solid #004edf;
+    align-items: left;
+}
+
+.Estudio1, .Estudio2{  /*Para centrar titulos de Grid Estudios*/
+    text-align: center;
+    font-style: italic;
+}
+
+.containerAsociados{
+    display: flex;
+    flex-direction: row;
+}
+
+@media only screen and (max-width: 600px) {
+    header{
+        background-color: darkslategrey;
+        color: #e0eeff;
+        height: auto;
+        width: 100%;
+    }
+
+    .itemHeader2{
+        /* align-items: center; */
+        margin-top: 10%;
+        color: #c5ffff;
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+    
+    h2{
+        background-color: MidnightBlue;       /*Color de fondo de los botones de navegación*/
+        color: white;                          /*Color del texto de h2*/
+        padding: 2px;                            /*Crear un mayor borde en los h2*/
+        font-size: 1.5em;
+
+    }
+    
+    h4{
+        color: darkblue;
+        font-size: 1em;
+    }
+
+    .containerActores{
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    .containerGridActores{
+        background-color: yellowgreen;
+        border: 2px solid rgb(51, 0, 56);
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .itemGridActor{
+        background-color: white;
+        border: 1px solid #003cff;
+        align-items: right;
+    }
+    
+    .containerFlexEstudios{
+        flex-direction: column;
+    }
+
+    .containerSucursales{
+        flex-direction: column;     /*Para que los mapas se pongan en columna*/
+    }
+
+    /* .containerSucursales{
+        padding: 0;
+        margin: 0;
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        display: flex;
+        width: 50%;
+    } */
+
+    .itemSucursales{                                  /*Flexbox Items del Contenedor en VideoContacto.html*/
+        width: 100%;
+    }
+
+    .itemActores{                                  /*Flexbox Items del Contenedor en VideoContacto.html*/
+        width: auto;
+    }
+
+    img{
+        width: 120px;
+        height: 120px;
+        align-items: center;
+    }
+
+    footer{
+        position: relative; /*Para desanclar el Footer en pantallas angostas*/
+    }
+    
+    .containerAsociados{
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* .itemSucursales.item-9,.itemSucursales.item-10,.itemSucursales.item-11,.itemSucursales.item-12{
+        width: 120px;
+    } */
+  }
+
+
+@media only screen and (max-width: 400px) {
+    header{
+        background-color: #34a1a1;
+        color: yellow;
+        height: auto;
+        width: 100%;
+    }
+    
+    .containerHeader{
+        display: flex;   
+    }
+
+    h1{
+        font-size: 1.5em;
+    }
+    
+    h2{
+        background-color: MidnightBlue;       /*Color de fondo de los botones de navegación*/
+        color: white;                          /*Color del texto de h2*/
+        padding: 2px;                            /*Crear un mayor borde en los h2*/
+        font-size: 1em;
+    }
+    
+    h4{
+        color: darkblue;
+        font-size: 1em;
+    }
+
+    .containerNav{
+        display: grid;
+    }
+
+    .nav{
+        font-size: 0.8em;
+        text-decoration: none;          /*Quita el subrayado de los links*/
+        padding: 0px;                   /*Crear un mayor borde en los botones de navegación*/
+        border-radius: 3px;             /*Redondea las esquinas de los botones*/
+        margin: 2px;                    /*Es la separación entre los botones de navegación*/
+    }
+
+    img{
+        width: 60px;
+        height: 60px;
+        align-items: center;
+    }
+}
