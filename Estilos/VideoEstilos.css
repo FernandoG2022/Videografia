@@ -4,7 +4,7 @@
     font-size: 14px;
 }
 
-h1,h2{
+h1,h2,h3{
     font-family: 'Roboto Slab', serif;      /*Fuente de Fonts.Google*/
     text-align: center;
 }
@@ -18,6 +18,13 @@ h2{
     color: white;                          /*Color del texto de h2*/
     padding: 2px;                            /*Crear un mayor borde en los h2*/
     font-size: 2em;
+}
+
+h3{
+    color: #f0f0f0;
+    /* border: #b8b8b8 solid 1px; */
+    background-color: black;
+    opacity: 60%;
 }
 
 h4{
@@ -58,6 +65,8 @@ header{
 body{
     background-image: linear-gradient(to top, #64d3f8 0%, #98aae7 100%); /* Color de Fondo de https://webgradients.com/ */
     text-align: justify;
+    padding: 0;
+    margin: 0;
 }
 
 /* table{
@@ -222,9 +231,12 @@ input[type=reset]:hover{
         color: white;                          /*Color del texto de h2*/
         padding: 2px;                            /*Crear un mayor borde en los h2*/
         font-size: 1.5em;
-
     }
     
+    h3{
+        font-size: 1em;
+    }
+
     h4{
         color: darkblue;
         font-size: 1em;
@@ -318,6 +330,10 @@ input[type=reset]:hover{
         font-size: 1em;
     }
     
+    h3{
+        font-size: 0.75em;
+    }
+
     h4{
         color: darkblue;
         font-size: 1em;
