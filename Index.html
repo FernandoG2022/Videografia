@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script> <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script> <!-- Bootstrap -->
+   
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="Estilos/VideoEstilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Fuente de Google -->
@@ -37,7 +41,53 @@
     
     <h2 class="animate__animated animate__pulse">Base de datos de Videos</h2>
         <center>
-            <img src="Imagenes/UnsplashCintaVideo.jpg" alt="Cinta" width="18%" border="2px">
+                
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+        </div>
+        
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+            <img src="Imagenes/ArcoIrisMadero.jpg" alt="Arco Iris" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+            <h3>Videografia para tardes de Arco Iris</h3>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Imagenes/Amanecer.jpg" alt="Amanecer" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+            <h3>Videografia para el Amanecer</h3>
+            </div> 
+        </div>
+        <div class="carousel-item">
+            <img src="Imagenes/Tormenta.PNG" alt="New York" class="d-block" style="width:100%">
+            <div class="carousel-caption">
+            <h3>Videografia para Noches de Tormentas</h3>
+            </div>  
+        </div>
+        </div>
+        
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+
+
+
+            <!-- <img src="Imagenes/UnsplashCintaVideo.jpg" alt="Cinta" width="18%" border="2px"> -->
             <!-- <img src="/TPs/Videografia/Imagenes/LosMiserables.jpg" alt="Video" width="20%"> -->
             <br>
             <br>
