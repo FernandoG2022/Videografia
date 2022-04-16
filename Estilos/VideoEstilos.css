@@ -15,8 +15,8 @@ h1{
 
 h2{
     background-color: MidnightBlue;       /*Color de fondo de los botones de navegación*/
-    color: white;                          /*Color del texto de h2*/
-    padding: 2px;                            /*Crear un mayor borde en los h2*/
+    color: white;                         /*Color del texto de h2*/
+    padding: 2px;                           /*Crear un mayor borde en los h2*/
     font-size: 2em;
 }
 
@@ -86,20 +86,20 @@ footer{
     width: 100%;
 }
 
-input[type=submit]{
+input[type=submit]{     /* Forma del puntero del mouse al pasar por encima de los botones SUBMIT */
     cursor: pointer;
 }
 
-input[type=reset]{
+input[type=reset]{      /* Forma del puntero del mouse al pasar por encima de los botones RESET */
     cursor: pointer;
 }
 
-input[type=submit]:hover{
-    background-color: black;
+input[type=submit]:hover{       /* Color de los botones SUBMIT al pasar el mouse por encima */
+    background-color: gray;
     color: white;
 }
 
-input[type=reset]:hover{
+input[type=reset]:hover{        /* Color de los botones RESET al pasar el mouse por encima */
     background-color: black;
     color: white;
 }
@@ -120,7 +120,7 @@ input[type=reset]:hover{
     align-content: flex-end;
 }
 
-.itemActores{                                  /*Flexbox Items del Contenedor en VideoContacto.html*/
+.itemActores{                             /*Flexbox Items del Contenedor en VideoContacto.html*/
     width: 33.3333%;
 }
 
@@ -198,7 +198,7 @@ input[type=reset]:hover{
     align-items: left;
 }
 
-.Estudio1, .Estudio2{  /*Para centrar titulos de Grid Estudios*/
+.Estudio1, .Estudio2{        /*Para centrar titulos de Grid Estudios*/
     text-align: center;
     font-style: italic;
 }
@@ -206,6 +206,13 @@ input[type=reset]:hover{
 .containerAsociados{
     display: flex;
     flex-direction: row;
+}
+
+.IngresoSocios{              /*Formato para "Ingreso exclusivo Socios Registrados" en página Asociados*/
+    background-color: #ff0000;
+    opacity: 100%;
+    font-size: 1.5em;
+    height: 1.6em;
 }
 
 @media only screen and (max-width: 600px) {
@@ -242,6 +249,11 @@ input[type=reset]:hover{
         font-size: 1em;
     }
 
+    .IngresoSocios{              /*Formato para "Ingreso exclusivo Socios Registrados" en página Asociados*/
+        font-size: 1.5em;
+        height: 1.4em;
+    }
+    
     .containerActores{
         flex-direction: column;
         align-items: center;
@@ -292,6 +304,10 @@ input[type=reset]:hover{
         align-items: center;
     }
 
+    .carousel-item img{    /*Fotos Carrousel*/
+        height: 350px;
+    }
+
     footer{
         position: relative; /*Para desanclar el Footer en pantallas angostas*/
     }
@@ -320,7 +336,8 @@ input[type=reset]:hover{
     }
 
     h1{
-        font-size: 1.5em;
+        font-size: 2em;
+        text-align: center;
     }
     
     h2{
@@ -339,6 +356,11 @@ input[type=reset]:hover{
         font-size: 1em;
     }
 
+    .IngresoSocios{              /*Formato para "Ingreso exclusivo Socios Registrados" en página Asociados*/
+        font-size: 1em;
+        height: 1.4em;
+    }
+
     .containerNav{
         display: grid;
     }
@@ -355,5 +377,9 @@ input[type=reset]:hover{
         width: 60px;
         height: 60px;
         align-items: center;
+    }
+
+    .carousel-item img{    /*Fotos Carrousel*/
+        height: 240px;
     }
 }

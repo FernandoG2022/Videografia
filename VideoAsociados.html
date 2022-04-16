@@ -34,8 +34,8 @@
         </div>        
     </header>
 
-<h2 class="animate__animated animate__pulse">Formulario de Socios</h2>
-    <form action="show_data.html" target="_blank">
+    <h2 class="animate__animated animate__pulse">Formulario de Nuevos Socios</h2>
+        <form action="show_data.html" target="_blank">
             <fieldset>
                 <legend>Nombre y Apellido</legend>
                 <div class="containerAsociados">
@@ -124,10 +124,38 @@
                         <option value="Otro">Otro</option>
                     </select>
                 </fieldset>
-            <br>
+           
             <input type="reset" value="Borrar">
-            <input type="submit" value="Enviar"<br><br>
+            <input type="submit" value="Enviar"<br><br><br>
     </form>
+
+    <section>
+        <h3 class="IngresoSocios">Ingreso Exclusivo Socios Registrados</h3>
+            <fieldset>
+            <legend>Datos de Usuarios</legend>
+            <div class="containerAsociados">
+                <form action="show_data.html" target="_blank"> <!-- Formulario de Bootstrap -->
+                    <div class="mb-3 mt-3">
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Ingrese aqui su email" name="Email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="pwd" class="form-label">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Ingrese aqui su password" name="Password">
+                    </div>
+                    <div class="form-check mb-3">
+                        <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember"> Recordarme
+                        </label>
+                    </div>
+            </fieldset>
+                    <input type="reset" value="Borrar">
+                    <input type="submit" value="Ingresar"<br><br>
+                </form>
+            </div>
+        
+
+    </section>
     <br>
 
     <footer>
