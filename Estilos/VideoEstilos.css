@@ -4,19 +4,14 @@
     font-size: 14px;
 }
 
-h1,h2,h3{
-    font-family: 'Roboto Slab', serif;      /*Fuente de Fonts.Google*/
-    text-align: center;
-}
-
-h1{
+h1{                                         /* h1 solo lo uso para titulo Videografia */
     font-size: 3em;
 }
 
-h2{
-    background-color: MidnightBlue;       /*Color de fondo de los botones de navegación*/
-    color: white;                         /*Color del texto de h2*/
-    padding: 2px;                           /*Crear un mayor borde en los h2*/
+h2{                                         /* h2 solo lo uso para Subtitulos debajo de Videografia */
+    background-color: MidnightBlue;       /* Color de fondo */
+    color: white;                         /* Color del texto */
+    padding: 2px;                           /* Crear un mayor borde */
     font-size: 2em;
 }
 
@@ -27,38 +22,43 @@ h3{
     opacity: 60%;
 }
 
-h4{
+h1,h2,h3{
+    font-family: 'Roboto Slab', serif;      /*Fuente de Fonts.Google*/
+    text-align: center;
+}
+
+h4{                                         /* h4 solo lo uso para los links de las tablas */
     color: darkblue;
     font-size: 1em;
 }
 
 h4 :hover{
     color: cyan;
-    background-color: darkslateblue;
+    background-color: darkblue;
 }
 
 a:link, a:visited, a:active {
-    text-decoration:none;                   /*Para que los links no aparezcan subrayados*/
+    text-decoration:none;                 /* Para que los links no aparezcan subrayados */
 }
 
-header{
+header{                                   /* Defino las propiedades del encabezado */
     background-color: black;
     color: white;
     height: 80px;
 }
 
-.nav{
-    font-family: 'Roboto Slab', serif;      /*Fuente de Fonts.Google*/
-    font-size: 1em;
-    background-color: gray;       /*Color de fondo de los botones de navegación*/
-    color: white;                 /*Color del texto de los botones de navegación*/
-    text-decoration: none;          /*Quita el subrayado de los links*/
-    padding: 3px;                   /*Crear un mayor borde en los botones de navegación*/
-    border-radius: 5px;             /*Redondea las esquinas de los botones*/
-    margin: 1px;                    /*Es la separación entre los botones de navegación*/
+.nav{                                     /* Defino las propiedades de la Barra de botones */
+    font-family: 'Roboto Slab', serif;    /* Fuente de Fonts.Google*/
+    font-size: 0.9em;
+    background-color: gray;             /* Color de fondo de los botones */
+    color: white;                       /* Color del texto de los botones */
+    text-decoration: none;                /* Quita el subrayado de los links*/
+    padding: 3px;                         /* Crear un mayor borde en los botones */
+    border-radius: 5px;                   /* Redondea las esquinas de los botones */
+    margin: 2px;                          /* Es la separación entre los botones */
 }
 
-.containerNav{
+.containerNav{                            /* Es el FlexBox para el los botones del Nav */
     display: flex;
 }
 
@@ -80,38 +80,31 @@ footer{
     color: white;
     text-align: center;
     clear: both;
-    position: fixed;
+    /* position: fixed; */
     height: 50px;
     bottom: 0;
     width: 100%;
 }
 
-input[type=submit]{     /* Forma del puntero del mouse al pasar por encima de los botones SUBMIT */
+input[type=submit]{                         /* Forma del puntero del mouse al pasar por encima de los botones SUBMIT */
     cursor: pointer;
 }
 
-input[type=reset]{      /* Forma del puntero del mouse al pasar por encima de los botones RESET */
+input[type=reset]{                          /* Forma del puntero del mouse al pasar por encima de los botones RESET */
     cursor: pointer;
 }
 
-input[type=submit]:hover{       /* Color de los botones SUBMIT al pasar el mouse por encima */
+input[type=submit]:hover{                   /* Color de los botones SUBMIT al pasar el mouse por encima */
     background-color: gray;
     color: white;
 }
 
-input[type=reset]:hover{        /* Color de los botones RESET al pasar el mouse por encima */
+input[type=reset]:hover{                    /* Color de los botones RESET al pasar el mouse por encima */
     background-color: black;
     color: white;
 }
 
-/* section{
-    text-align: center;
-    width: 25%;
-    padding: 0;
-    float: left;
-} */
-
-.container1{                              /*Flexbox Contenedor para VideoContacto.html*/
+.container1{                                /* Flexbox Contenedor para VideoContacto.html */
     /* border: 5px solid blue; */
     display: inline-flex;
     display: flex;
@@ -120,17 +113,17 @@ input[type=reset]:hover{        /* Color de los botones RESET al pasar el mouse 
     align-content: flex-end;
 }
 
-.itemActores{                             /*Flexbox Items del Contenedor en VideoContacto.html*/
+.itemActores{                               /* Flexbox Items del Contenedor en VideoContacto.html */
     width: 33.3333%;
 }
 
-.containerActores{
+.containerActores{                          /* Es el FlexBox de 3 celdas para la pagina actores*/
     text-align: center;
     flex-direction: row;
     display: flex;
 }
 
-.itemSucursales{                                  /*Flexbox Items del Contenedor en VideoContacto.html*/
+.itemSucursales{                            /* Flexbox Items del Contenedor en VideoContacto.html */
     width: 25%;
 }
 
@@ -142,22 +135,21 @@ input[type=reset]:hover{        /* Color de los botones RESET al pasar el mouse 
     flex-wrap: wrap;
     display: flex;
     width: 100%;
-    /* column-gap: 20mm; */
 }
 
 /* .itemSucursales.item-9,.itemSucursales.item-10,.itemSucursales.item-11,.itemSucursales.item-12{
-    width: 100%;
+    grid-template-columns: auto auto auto auto;
 } */
 
 .span{
     width: 200px;
 }
 
-.Actor1, .Actor2, .Actor3{  /*Para centrar titulos de Grid Actores*/
+.Actor1, .Actor2, .Actor3{                  /* Para centrar titulos de Grid Actores */
     text-align: center;
 }
 
-.containerGridActores{
+.containerGridActores{                      /* Es el GRID para pagina actores 3 columnas x 8 filas */
     background-color: yellowgreen;
     border: 4px solid blue;
     display: grid;
@@ -198,7 +190,7 @@ input[type=reset]:hover{        /* Color de los botones RESET al pasar el mouse 
     align-items: left;
 }
 
-.Estudio1, .Estudio2{        /*Para centrar titulos de Grid Estudios*/
+.Estudio1, .Estudio2{                       /* Para centrar titulos de Grid Estudios */
     text-align: center;
     font-style: italic;
 }
@@ -208,12 +200,12 @@ input[type=reset]:hover{        /* Color de los botones RESET al pasar el mouse 
     flex-direction: row;
 }
 
-.IngresoSocios{              /*Formato para "Ingreso exclusivo Socios Registrados" en página Asociados*/
-    background-color: #ff0000;
-    opacity: 100%;
-    font-size: 1.5em;
-    height: 1.6em;
-}
+/* Prueba para anchos de campos formulario Asociados*/
+/* .itemAsoc01, .itemAsoc03, .itemAsoc05, .itemAsoc07, .itemAsoc09, .itemAsoc11, .itemAsoc13, .itemAsoc15, .itemAsoc16, .itemAsoc17, .itemAsoc18, .itemAsoc19, .itemAsoc20, .itemAsoc21, .itemAsoc22, .itemAsoc23{ */
+/* .itemAsoc{ 
+    width: 170px;
+    margin: 2px;
+} */
 
 @media only screen and (max-width: 600px) {
     header{
@@ -229,14 +221,14 @@ input[type=reset]:hover{        /* Color de los botones RESET al pasar el mouse 
         color: #c5ffff;
     }
 
-    h1{
+    h1{                                         /* h1 solo lo uso para titulo Videografia */
         font-size: 2.5em;
     }
     
-    h2{
-        background-color: MidnightBlue;       /*Color de fondo de los botones de navegación*/
-        color: white;                          /*Color del texto de h2*/
-        padding: 2px;                            /*Crear un mayor borde en los h2*/
+    h2{                                         /* h2 solo lo uso para Subtitulos debajo de Videografia */
+        background-color: MidnightBlue;       /* Color de fondo */
+        color: white;                         /* Color del texto */
+        padding: 2px;                           /* Crear un mayor borde */
         font-size: 1.5em;
     }
     
@@ -248,28 +240,22 @@ input[type=reset]:hover{        /* Color de los botones RESET al pasar el mouse 
         color: darkblue;
         font-size: 1em;
     }
-
-    .IngresoSocios{              /*Formato para "Ingreso exclusivo Socios Registrados" en página Asociados*/
-        font-size: 1.5em;
-        height: 1.4em;
-    }
     
-    .containerActores{
-        flex-direction: column;
+    .containerActores{                              /*Es el FlexBox de 3 celdas para la pagina actores*/
+        flex-direction: column;                     /*Lo realineo en columnas*/
         align-items: center;
     }
         
-    .containerGridActores{
+    .containerGridActores{                          /*Es el GRID para pagina actores 3 columnas x 8 filas*/
         background-color: yellowgreen;
         border: 2px solid rgb(51, 0, 56);
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
     }
 
-    .itemGridActor{
+    .itemGridActor{                                 /* Formato de las celdas del GRID Actores */
         background-color: white;
         border: 1px solid #003cff;
-        align-items: right;
     }
     
     .containerFlexEstudios{
@@ -277,7 +263,7 @@ input[type=reset]:hover{        /* Color de los botones RESET al pasar el mouse 
     }
 
     .containerSucursales{
-        flex-direction: column;     /*Para que los mapas se pongan en columna*/
+        flex-direction: column;                     /* Para que los mapas se pongan en columna */
     }
 
     /* .containerSucursales{
@@ -304,12 +290,12 @@ input[type=reset]:hover{        /* Color de los botones RESET al pasar el mouse 
         align-items: center;
     }
 
-    .carousel-item img{    /*Fotos Carrousel*/
-        height: 350px;
+    .carousel-item img{                             /* Fotos Carrousel */
+        height: 320px;
     }
 
     footer{
-        position: relative; /*Para desanclar el Footer en pantallas angostas*/
+        position: relative;                         /* Para desanclar el Footer en pantallas angostas */
     }
     
     .containerAsociados{
@@ -323,63 +309,58 @@ input[type=reset]:hover{        /* Color de los botones RESET al pasar el mouse 
   }
 
 
-@media only screen and (max-width: 400px) {
-    header{
-        background-color: #34a1a1;
-        color: yellow;
-        height: auto;
-        width: 100%;
-    }
-    
-    .containerHeader{
-        display: flex;   
-    }
+    @media only screen and (max-width: 400px) {
+        header{
+            background-color: #34a1a1;
+            color: yellow;
+            height: auto;
+            width: 100%;
+        }
+        
+        .containerHeader{                           /* Es el FlexBox para el Header, para ordenar Titulo y Nav */
+            display: flex;
+        }
 
-    h1{
-        font-size: 2em;
-        text-align: center;
-    }
-    
-    h2{
-        background-color: MidnightBlue;       /*Color de fondo de los botones de navegación*/
-        color: white;                          /*Color del texto de h2*/
-        padding: 2px;                            /*Crear un mayor borde en los h2*/
-        font-size: 1em;
-    }
-    
-    h3{
-        font-size: 0.75em;
-    }
+        h1{                                         /* h1 solo lo uso para titulo Videografia */
+            font-size: 2em;
+            text-align: center;
+        }
+        
+        h2{                                         /* h2 solo lo uso para Subtitulos debajo de Videografia */
+            background-color: MidnightBlue;       /* Color de fondo */
+            color: white;                         /* Color del texto */
+            padding: 2px;                           /* Crear un mayor borde  */
+            font-size: 1em;
+        }
+        
+        h3{
+            font-size: 0.75em;
+        }
 
-    h4{
-        color: darkblue;
-        font-size: 1em;
-    }
+        h4{
+            color: darkblue;
+            font-size: 1em;
+        }
 
-    .IngresoSocios{              /*Formato para "Ingreso exclusivo Socios Registrados" en página Asociados*/
-        font-size: 1em;
-        height: 1.4em;
-    }
+        .containerNav{                      /* Es el FlexBox para el los botones del Nav */
+            display: grid;
+        }
 
-    .containerNav{
-        display: grid;
-    }
+        .nav{                               /* Defino las propiedades de la Barra de navegación en "max-width: 400px" */
+            font-size: 0.7em;
+            text-decoration: none;          /* Quita el subrayado de los links */
+            padding: 0px;                   /* Crear un mayor borde en los botones */
+            border-radius: 3px;             /* Redondea las esquinas de los botones */
+            margin: 1px;                    /* Es la separación entre los botones  */
+        }
 
-    .nav{
-        font-size: 0.8em;
-        text-decoration: none;          /*Quita el subrayado de los links*/
-        padding: 0px;                   /*Crear un mayor borde en los botones de navegación*/
-        border-radius: 3px;             /*Redondea las esquinas de los botones*/
-        margin: 2px;                    /*Es la separación entre los botones de navegación*/
-    }
+        img{
+            width: 60px;
+            height: 60px;
+            align-items: center;
+        }
 
-    img{
-        width: 60px;
-        height: 60px;
-        align-items: center;
-    }
-
-    .carousel-item img{    /*Fotos Carrousel*/
-        height: 240px;
-    }
+        .carousel-item img{                 /*Fotos Carrousel*/
+            height: 240px;
+        }
 }
