@@ -44,7 +44,7 @@ a:link, a:visited, a:active {
 header{                                   /* Defino las propiedades del encabezado */
     background-color: black;
     color: white;
-    height: 80px;
+    height: 95px;
 }
 
 .nav{                                     /* Defino las propiedades de la Barra de botones */
@@ -55,7 +55,8 @@ header{                                   /* Defino las propiedades del encabeza
     text-decoration: none;                /* Quita el subrayado de los links*/
     padding: 3px;                         /* Crear un mayor borde en los botones */
     border-radius: 5px;                   /* Redondea las esquinas de los botones */
-    margin: 2px;                          /* Es la separación entre los botones */
+    margin: 3px;                          /* Es la separación entre los botones */    
+    margin-top: 8px;
 }
 
 .containerNav{                            /* Es el FlexBox para el los botones del Nav */
@@ -80,7 +81,7 @@ footer{
     color: white;
     text-align: center;
     clear: both;
-    /* position: fixed; */
+    position: fixed; 
     height: 50px;
     bottom: 0;
     width: 100%;
@@ -241,6 +242,9 @@ input[type=reset]:hover{                    /* Color de los botones RESET al pas
         font-size: 1em;
     }
     
+    .nav{                                     /* Defino las propiedades de la Barra de botones */
+        margin-top: 5px;
+    }
     .containerActores{                              /*Es el FlexBox de 3 celdas para la pagina actores*/
         flex-direction: column;                     /*Lo realineo en columnas*/
         align-items: center;
@@ -293,11 +297,11 @@ input[type=reset]:hover{                    /* Color de los botones RESET al pas
     .carousel-item img{                             /* Fotos Carrousel */
         height: 320px;
     }
-
+/*
     footer{
-        position: relative;                         /* Para desanclar el Footer en pantallas angostas */
+        position: relative;                          Para desanclar el Footer en pantallas angostas
     }
-    
+ */   
     .containerAsociados{
         display: flex;
         flex-direction: column;
