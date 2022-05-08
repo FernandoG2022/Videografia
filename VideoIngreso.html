@@ -48,25 +48,24 @@
         <h2 class="animate__animated animate__pulse" style="background-color: #ff0000;">Ingreso Exclusivo Socios Registrados</h2>
             <div class="containerAsociados">
                 <form name="validacion" action="show_data.html" target="_blank">
-                    <fieldset>
-                        <legend>Datos Personales</legend>   <!-- Con Bootstrap fallan los legend -->
-                            <div class="containerAsociados">
-                                <div class="itemAsoc itemAsoc30"><label for="Email:">Email: </label></div>
-                                <div class="itemAsoc itemAsoc31"><input type="email" name="Email" id="Email" placeholder="Ingrese aqui su Email"></div>
-                                <div class="itemAsoc itemAsoc32"><label for="Contraseña">Password: </label></div>
-                                <div class="itemAsoc itemAsoc33"><input type="password" name="Password" id="Password" placeholder="Ingrese aqui su Contraseña"></div>
-                            </div>
-                                <div class="form-check mb-3"> <!-- Clase de Bootstrap para Recordar Usuario -->
-                                    <label class="form-check-label">
-                                        <input class="form-check-input" type="checkbox" name="remember"> Recordarme
-                                    </label>
-                                </div>
-                    </fieldset>
-                    
-                    <input type="reset" value="Borrar">
-                    <input type="submit" value="Ingresar" onclick="validaEnviarIngreso()"><br><br>
 
-                    <p style="font-style: italic;">Datos Obligatorios: Email y Password</p><br>
+                    <legend>Datos Personales</legend>   <!-- Con Bootstrap fallan los legend -->
+                        <div class="containerAsociados">
+                            <div class="itemAsoc itemAsoc30"><label for="Email:">Email: </label></div>
+                            <div class="itemAsoc itemAsoc31"><input type="email" name="Email" id="Email" placeholder="Ingrese aqui su Email"></div>
+                            <div class="itemAsoc itemAsoc32"><label for="Contraseña">Password: </label></div>
+                            <div class="itemAsoc itemAsoc33"><input type="password" name="Password" id="Password" placeholder="Ingrese aqui su Contraseña"></div>
+                        </div>
+                        <div class="form-check mb-3"> <!-- Clase de Bootstrap para Recordar Usuario -->
+                            <label class="form-check-label">
+                                <input class="form-check-input" type="checkbox" name="remember" style="margin: 0px"> Recordarme
+                            </label>
+                        </div>
+                                       
+                        <input type="reset" value="Borrar" style="margin: 0px 20px 0px 20px" width="200%">
+                        <input type="submit" value="Ingresar" onclick="validaEnviarIngreso()"><br><br>
+
+                        <p style="font-style: italic; margin: 0px 0px 0px 20px">Datos Obligatorios: Email y Password</p><br>
                 </form>
             </div>
     </section>    

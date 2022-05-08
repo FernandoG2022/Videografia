@@ -46,6 +46,7 @@
 
     <h2 class="animate__animated animate__pulse" style="background-color: rgb(1, 78, 1);">Formulario Registro de Nuevos Socios</h2>
         <form name="validacion" action="show_data.html" target="_blank">
+            
             <fieldset>
                 <legend>Datos Personales</legend>   <!-- Con Bootstrap fallan los legend -->
                     <div class="containerAsociados">
@@ -59,6 +60,8 @@
                         <div class="itemAsoc itemAsoc25"><input type="email" name="Mail" id="Mail" placeholder="Ingrese aqui su Mail"></div>
                         <div class="itemAsoc itemAsoc26"><label for="Contraseña">Password: </label></div>
                         <div class="itemAsoc itemAsoc27"><input type="password" name="Password" id="Password" placeholder="Ingrese aqui su Contraseña"></div>
+                        <div class="itemAsoc itemAsoc28"><label for="ReContraseña">Reingrese su Password: </label></div>
+                        <div class="itemAsoc itemAsoc29"><input type="password" name="RePassword" id="RePassword" placeholder="Reingrese aqui su Contraseña"></div>
 
                     </div>
             </fieldset>
@@ -70,15 +73,15 @@
                     <div class="itemAsoc itemAsoc05"><label for="Calle">Calle: </label></div>
                     <div class="itemAsoc itemAsoc06"><input type="text" name="Calle" id="Calle" placeholder="Ingrese aqui su dirección"></div>
                     <div class="itemAsoc itemAsoc07"><label for="Nro">Nro: </label></div>
-                    <div class="itemAsoc itemAsoc08"><input type="number" name="Nro" id="Nro" placeholder="Ingrese aqui su numeración"></div>
+                    <div class="itemAsoc itemAsoc08"><input type="number" name="Nro" id="Nro" placeholder="Ingrese aqui su número"></div>
                 </div>
                 <div class="containerAsociados">
                     <div class="itemAsoc itemAsoc09"><label for="Piso">Piso: </label></div>
-                    <div class="itemAsoc itemAsoc10"><input type="number" name="Piso" id="Piso" placeholder="Ingrese aqui el Piso"></div>
+                    <div class="itemAsoc itemAsoc10"><input type="number" name="Piso" id="Piso" placeholder="Ingrese aqui el piso"></div>
                     <div class="itemAsoc itemAsoc11"><label for="Dpto">Dpto: </label></div>
-                    <div class="itemAsoc itemAsoc12"><input type="text" name="Dpto" id="Dpto" placeholder="Ingrese aqui el Dpto"></div>
+                    <div class="itemAsoc itemAsoc12"><input type="text" name="Dpto" id="Dpto" placeholder="Ingrese aqui el dpto"></div>
                     <div class="itemAsoc itemAsoc13"><label for="CP">CP: </label></div>
-                    <div class="itemAsoc itemAsoc14"><input type="number" name="CP" id="CP" placeholder="Ingrese aqui su código postal"></div>    
+                    <div class="itemAsoc itemAsoc14"><input type="number" name="CP" id="CP" placeholder="Ingrese aqui su CP"></div>    
                 </div>                    
             
             </fieldset>
@@ -86,7 +89,7 @@
             <fieldset>
                 <legend>Fecha de Nacimiento</legend>
                 <div class="containerAsociados"></div>
-                    <div class="itemAsoc itemAsoc15"><input type="date" name="Nacimiento" min="1930-01-01" max="2040-12-31" id="" placeholder="Ingrese aqui su fecha de nacimiento"></div>
+                    <div class="itemAsoc itemAsoc15" style="margin: 0px 0px 0px 20px;"><input type="date" name="Nacimiento" min="1930-01-01" max="2050-12-31" id="" placeholder="Ingrese aqui su fecha de nacimiento"></div>
                 </div>
             </fieldset>
             <p>
@@ -115,7 +118,7 @@
 
             <fieldset>
                 <legend>Ocupación</legend>
-                <label for="Ocupacion">Turno: </label>
+                <label for="Ocupacion" style="margin: 0px 0px 0px 20px;"> </label>
                     <select name="Ocupacion" id="Ocupacion">
                         <option value=""></option>
                         <option value="Profesional">Profesional</option>
@@ -128,10 +131,10 @@
                     <br><br>
             </fieldset>
            
-            <input type="reset" value="Borrar">
+            <input type="reset" value="Borrar" style="margin: 0px 20px 0px 20px">
             <input type="submit" value="Enviar" onclick="validaEnviarAsociado()"><br><br>
 
-            <p style="font-style: italic;">Datos Obligatorios: Nombre, Apellido, Email y Password</p><br>
+            <p style="font-style: italic; margin: 0px 0px 50px 20px">Datos Obligatorios: Nombre, Apellido, Email y Password</p><br>
         </form>
 
     
