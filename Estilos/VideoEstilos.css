@@ -57,6 +57,7 @@ header{                                   /* Defino las propiedades del encabeza
     border-radius: 5px;                   /* Redondea las esquinas de los botones */
     margin: 3px;                          /* Es la separación entre los botones */    
     margin-top: 8px;
+    /* transition: all 0.4s ease-in-out; */
 }
 
 .containerNav{                            /* Es el FlexBox para el los botones del Nav */
@@ -193,7 +194,7 @@ input[type=reset]:hover{                    /* Color de los botones RESET al pas
 
 .Estudio1, .Estudio2{                       /* Para centrar titulos de Grid Estudios */
     text-align: center;
-    font-style: italic;
+    /* font-style: italic; */
 }
 
 .containerAsociados{
