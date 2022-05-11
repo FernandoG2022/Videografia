@@ -71,12 +71,6 @@ body{
     margin: 0;
 }
 
-/* table{
-    align-content: center; 
-    text-align: left;
-    width: 400px;
-} */
-
 footer{
     background-color: black;
     color: white;
@@ -223,7 +217,6 @@ legend{
     }
 
     .itemHeader2{
-        /* align-items: center; */
         margin-top: 10%;
         color: #c5ffff;
     }
@@ -248,6 +241,10 @@ legend{
         font-size: 1em;
     }
     
+    h5{
+        font-size: 0.9em;
+    }
+
     .nav{                                     /* Defino las propiedades de la Barra de botones */
         margin-top: 5px;
     }
@@ -264,7 +261,7 @@ legend{
     }
 
     .itemGridActor{                                 /* Formato de las celdas del GRID Actores */
-        background-color: white;
+        background-color: #bdbdb9;
         border: 1px solid #003cff;
     }
     
@@ -350,6 +347,10 @@ legend{
         h4{
             color: darkblue;
             font-size: 1em;
+        }
+
+        h5{
+            font-size: 0.8em;
         }
 
         .containerNav{                      /* Es el FlexBox para el los botones del Nav */
